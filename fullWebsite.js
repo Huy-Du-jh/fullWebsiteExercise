@@ -97,8 +97,8 @@ function addEventListenersOnLoad() {
     const parallaxImage2 = document.getElementById("parallaxImage2");
     window.addEventListener("scroll", () => {
       let windowY = window.scrollY;
-      parallaxImage1.style.top = 0.15 * windowY + "px";
-      parallaxImage2.style.top = 0.15 * windowY - 200 + "px";
+      parallaxImage1.style.top = 0.2 * windowY - 20 + "px";
+      parallaxImage2.style.top = 0.2 * windowY - 250 + "px";
       if (windowY > 300) {
 
         nav.style.backgroundColor = "#18062D";

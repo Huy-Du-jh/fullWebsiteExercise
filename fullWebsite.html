@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercise</title>
-  <link href="./fullWebsiteDesktop.css" rel="stylesheet">
+  <link href="./fullWebsite.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -13,7 +17,16 @@
 
   <div id="navWrapper">
     <nav id="hamburgerMenuAndEmailIcon">
-      <img id="hamburgerMenuIcon" src="./designImage/hamburgerIcon.png">
+      <div class="navLinkWrapper">
+        <img id="hamburgerMenuIcon" src="./designImage/hamburgerIcon.png">
+        <div class="hamburgerDropdownWrapper">
+          <ul class="hamburgerDropdown">
+            <li>Account</li>
+            <li>Settings</li>
+            <li>Advanced settings</li>
+          </ul>
+        </div>
+      </div>
       <img id="EmailIcon" src="./designImage/emailIcon.png">
     </nav>
   </div>
@@ -470,7 +483,8 @@
       </div>
     </div>
     <div class="lastWords">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
     </div>
   </footer>
   <script src="./fullWebsite.js"></script>
