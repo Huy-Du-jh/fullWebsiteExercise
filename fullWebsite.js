@@ -9,7 +9,11 @@ function swipeContainerRight(el) {
   el.style.transform = "translateX(0)";
   el.style.left = (Number(el.style.left.replace('px', '')) + 100) + "px";
 }
-
+function handleMediaQueryChange(e) {
+  if (e.matches) {
+    e.parallaxImage2Offset = 400;
+  }
+}
 function addEventListenersOnLoad() {
   window.addEventListener("load", (e) => {
     const containerArr = document.querySelectorAll(".carouselContainer");
@@ -95,10 +99,14 @@ function addEventListenersOnLoad() {
     const nav = document.getElementById("hamburgerMenuAndEmailIcon");
     const parallaxImage1 = document.getElementById("parallaxImage1");
     const parallaxImage2 = document.getElementById("parallaxImage2");
+    const mediaQuery = window.matchMedia('(max-width:900px)');
+    mediaQuery.parallaxImage2Offset = 250;
+    mediaQuery.addEventListener("change", function () { handleMediaQueryChange(mediaQuery) });
+    handleMediaQueryChange(mediaQuery);
     window.addEventListener("scroll", () => {
       let windowY = window.scrollY;
       parallaxImage1.style.top = 0.2 * windowY - 20 + "px";
-      parallaxImage2.style.top = 0.2 * windowY - 250 + "px";
+      parallaxImage2.style.top = 0.2 * windowY - mediaQuery.parallaxImage2Offset + "px";
       if (windowY > 300) {
 
         nav.style.backgroundColor = "#18062D";

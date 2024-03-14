@@ -469,3 +469,55 @@ footer h5 {
 .verticalLetter>div:nth-of-type(2) {
   color:#B5BBC4;
 }
+
+
+@media only screen and (max-width:900px) {
+  #emailIcon {
+    display:none;
+  }
+  .desktopHeaders {
+    display:none;
+  }
+  #desktopLetterDesign {
+    display:none;
+  }
+  .dateTime {
+    display:none;
+  }
+  #firstCarouselDesign h4,#firstCarouselDesign+.leftNavigate,#firstCarouselDesign~.rightNavigate {
+    display:none;
+  }
+  #secondHeaderDesign .verticalLetter {
+    display:none;
+  }
+  #parallaxContainer2 {
+    padding-left:0;
+    height:150vh;
+  }
+  #parallaxContainer2 .parallaxContainerTextContent {
+    padding-left:0;
+  }
+  .mobileHeaders {
+    line-height: 0.8em;
+    display:block;
+    padding-left:120px;
+  }
+  #firstHeaderDesign,#parallaxContainer1 {
+    height:180vh;
+  }
+  #parallaxContainer1 .parallaxContainerTextContent {
+    height:100vh;
+  }
+  #parallaxContainer1+.verticalLetter {
+    bottom:50%;
+  }
+  #parallaxImage2 {
+    height:150vh;
+  }
+  #secondHeaderDesign {
+    height:150vh;
+  }
+  .desktopAndMobileHeaders {
+    width:100%;
+  }
+}
