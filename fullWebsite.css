@@ -1,0 +1,258 @@
+html {
+  height:100%;
+}
+body {
+  margin:0;
+  min-height:100%;
+  color:white;
+  position:relative;
+}
+h2 {
+  font-size: 132px;
+}
+#navWrapper {
+  position:absolute;
+  top:0;
+  padding-top:45px;
+  padding-left:27px;
+  padding-right:27px;
+  width:100%;
+  height:100%;
+  z-index:5;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+#mainBackground {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  object-fit: cover;
+  z-index:-5;
+}
+#firstHeaderDesign {
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+.parallaxContainer {
+  position:relative;
+  top:0px;
+  width: 100%;
+  height:100vh;
+  box-sizing: border-box;
+  padding-left:77px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.parallaxContainerTextContent {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  padding-left:77px;
+  box-sizing:border-box;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+  #parallaxImage1,#parallaxImage2 {
+  position:relative;
+  width: 100%;
+  height:100vh;
+  display:block;
+  object-fit: cover;
+}
+#hamburgerMenuAndEmailIcon {
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  box-sizing: border-box;
+  position:sticky;
+  top:10px;
+  align-items: center;
+}
+#hamburgerMenuIcon {
+  width:23px;
+  pointer-events: all;
+}
+#emailIcon {
+  width:24px;
+  pointer-events: all;
+}
+.verticalLetter {
+  position:absolute;
+  bottom:0;
+  writing-mode: vertical-rl;
+  transform:rotate(180deg);
+  padding-left:27px;
+  padding-right:27px;
+  padding-top:45px;
+}
+.verticalLetter img {
+  transform:rotate(180deg);
+  margin-bottom:80px;
+  margin-top:50px;
+}
+.mobileHeaders {
+  display:none;
+}
+.desktopHeaders,.desktopAndMobileHeaders {
+  position:absolute;
+  text-align: center;
+  line-height: 120px;
+  width:50%;
+}
+.letterDesign {
+  position:absolute;
+}
+.flavorText {
+  padding-left:calc(77px + 120px);
+  padding-right:5%;
+  padding-bottom:5%;
+  box-sizing:border-box;
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items:end;
+}
+.smallHeader {
+  display:flex;
+  width:40%;
+}
+.smallHeader h4 {
+  margin:0;
+}
+.smallHeader p {
+  margin-bottom:0;
+}
+.carouselContainerWrapper {
+  position:relative;
+  padding-top:30px;
+  padding-bottom:50px;
+  width:100vw;
+  height:520px;
+  overflow: hidden;
+}
+#firstCarouselDesign {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width:100vw;
+  height:550px;
+  padding-top:30px;
+  overflow: hidden;
+}
+#firstCarouselDesign>h4 {
+  padding-left: calc(77px + 120px);
+  padding-bottom:20px;
+}
+#firstCarousel {
+  position:absolute;
+  left:0;
+  display:flex;
+  gap:25px;
+  pointer-events: none;
+}
+.carouselCard {
+
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  color:#0C2539;
+  width:370px;
+}
+.carouselCard h4 {
+  margin:0;
+  color: #0C2539;
+}
+.carouselCard p {
+  color: #677278;
+}
+.carouselHeader {
+  position:relative;
+  height:100%;
+}
+.carouselHeader img:first-child{
+  display:block;
+  object-fit: cover;
+  width:100%;
+}
+.carouselDeco {
+  position:absolute;
+  left:0;
+  bottom:0;
+  transform:translate(-50%,50%);
+}
+.carouselBody {
+  box-sizing: border-box;
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:45px;
+  padding-bottom:50px;
+  border-bottom:2px solid #F5F5F5;
+}
+.carouselFooter {
+  display:flex;
+  min-height:50px;
+  box-sizing: border-box;
+}
+.comments, .moreActions {
+  display:flex;
+  align-items: center;
+  width:50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+.comments {
+  justify-content: center;
+  border-right:2px solid #F5F5F5;
+}
+.moreActions {
+  display:flex;
+  justify-content: end;
+}
+.moreActions>div {
+  min-height: 50px;
+  width: 50px;
+  background-color: #F5F5F5;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.dateTime {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap:15px;
+}
+.dateTime img{
+  width:12px;
+  transform:rotate(270deg);
+}
+.leftNavigate,.rightNavigate {
+  position:absolute;
+  top:calc(50% - 10px);
+  background-color: rgba(12, 37, 57, 0.6);
+  border-radius: 50%;
+  width:50px;
+  box-sizing: border-box;
+  height:50px;
+  font-size:30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftNavigate {
+  left:10px;
+}
+.rightNavigate {
+  right:10px;
+}
