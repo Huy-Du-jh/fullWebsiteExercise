@@ -13,9 +13,7 @@ h2 {
 #navWrapper {
   position:absolute;
   top:0;
-  padding-top:45px;
-  padding-left:27px;
-  padding-right:27px;
+
   width:100%;
   height:100%;
   z-index:5;
@@ -37,15 +35,14 @@ h2 {
 }
 .parallaxContainer {
   position:relative;
-  top:0px;
+  bottom:0;
   width: 100%;
   height:100vh;
   box-sizing: border-box;
   padding-left:77px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-#paragraphSection {
+.paragraphSection {
   position:relative;
   top:0px;
   width: 100%;
@@ -54,7 +51,7 @@ h2 {
   padding-bottom:20px;
   box-sizing: border-box;
 }
-#paragraphs {
+.paragraphs {
   padding-left:calc(77px + 120px);
   padding-right:250px;
   box-sizing:border-box;
@@ -75,6 +72,13 @@ h2 {
   justify-content: center;
 }
   #parallaxImage1,#parallaxImage2 {
+  position:absolute;
+  width: 100%;
+  height:100%;
+  display:block;
+  object-fit: cover;
+}
+#parallaxImageHeight {
   position:relative;
   width: 100%;
   height:100vh;
@@ -85,14 +89,21 @@ h2 {
   display:flex;
   justify-content: space-between;
   width:100%;
+  height:60px;
   box-sizing: border-box;
   position:sticky;
-  top:10px;
+  top:0px;
   align-items: center;
+  background-color: transparent;
+  box-shadow: none;
+  transition:background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  padding-left:27px;
+  padding-right:27px;
 }
 #hamburgerMenuIcon {
   width:23px;
   pointer-events: all;
+  cursor:pointer;
 }
 #emailIcon {
   width:24px;
@@ -175,7 +186,7 @@ h2 {
   padding-top:30px;
   overflow: hidden;
 }
-.carouselContainer>h4,#secondCa {
+.carouselContainer>h4{
   padding-left: calc(77px + 120px);
   padding-bottom:20px;
 }
@@ -194,7 +205,7 @@ h2 {
   color:#0C2539;
   width:370px;
 }
-.carouselCard h4 {
+.carouselCard h3 {
   margin:0;
   color: #0C2539;
 }
@@ -295,10 +306,93 @@ h2 {
   display:flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
 .leftNavigate {
   left:10px;
 }
 .rightNavigate {
   right:10px;
+}
+.leftNavigate>img{
+  width:25px;
+  transform:rotate(90deg);
+}
+.rightNavigate>img {
+  width:25px;
+  transform:rotate(270deg);
+}
+.paragraphsFourColumns {
+ padding-right:200px; 
+}
+.paragraphsFourColumns>div{
+  width: calc(100% / 4);
+}
+#thirdHeaderDesign {
+  width:100%;
+  position:relative;
+}
+#backgroundContainer>img {
+  object-fit: cover;
+  width:100%;
+  display:block;
+}
+#thirdHeaderContent {
+  padding-right:200px;
+  display:flex;
+  position:absolute;
+  top:0;
+  width:100%;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  align-items: center;
+  height:100%;
+}
+#thirdHeaderContent>div {
+  width:35%;
+}
+#thirdHeaderContent h4 {
+  margin:0;
+}
+#thirdHeaderContent h3 {
+  font-size:40px;
+  margin:0;
+}
+footer {
+  padding-left:calc(77px + 120px);
+  position:relative;
+  background-color:#140328;
+  width:100%;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+  padding-top:60px;
+  gap:15px;
+  line-height: 2rem;
+}
+footer h5 {
+  margin:0;
+  color: #0D4363;
+}
+.footerSection {
+  padding-bottom:40px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footerSection:nth-of-type(2) {
+  width:15%;
+  
+}
+.footerSection p{
+  margin:0;
+}
+.footerSection:first-of-type {
+  width:25%;  
+}
+.lastWords {
+  color:#5C5B61;
+  width:100%;
+  margin-bottom:40px;
 }
